@@ -88,9 +88,9 @@ class icons extends Component {
         }
         return (
             <div>
-                <div style={{position:"fixed",marginTop:40,marginLeft:700}}>{h}</div>
-                <div style={{position:"fixed",marginTop:140,marginLeft:550}}>{k} </div>
-                <div style={{position:"fixed",marginTop:40,marginLeft:700}}>{j} </div>
+                <div style={{position:"fixed",marginTop:90,marginLeft:700}}>{h}</div>
+                <div style={{position:"fixed",marginTop:190,marginLeft:550}}>{k} </div>
+                <div style={{position:"fixed",marginTop:90,marginLeft:700}}>{j} </div>
                 <div style={{position:"fixed",marginTop:40,marginLeft:700}}>{i} </div>
 
 

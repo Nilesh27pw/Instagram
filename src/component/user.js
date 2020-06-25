@@ -10,7 +10,7 @@ class RutujaProfile extends Component{
 
   render(){
   return (
-    <div>
+    <div >
         <div className="ctQZ">   
             <div className="_47KiJ">
                 <img src={Icon} style={{marginRight : 100, blockSize:100}}></img>
