@@ -4,6 +4,23 @@ import Pic1 from './rutuja.jpg'
 import BorderWrapper from 'react-border-wrapper'
 
 class Following1 extends Component {
+    constructor(props) {
+        super(props)
+        this.state={
+           f:'follow'
+        };
+     }
+     chng = () =>{
+      if(this.state.f === 'follow'){
+        this.setState({
+           f:'following'
+        });
+      }else{
+        this.setState({
+           f:'follow'
+        });
+      }
+    }
     render() {
         return (
             <div className = "f0">
@@ -29,7 +46,7 @@ class Following1 extends Component {
                         <div style={{marginLeft:15}}> started following you.</div>
                        <time className="f11" dateTime="2020-06-2405:00:00" title="Jun 24,2020">1d</time>
                     </div>
-                    <div style={{marginLeft:40}}>
+                    <div style={{marginLeft:40,background:'skyblue' ,borderRadius:5}}>
                         <BorderWrapper
                               marginLeft="10px"
                            borderColour="lightgrey"
@@ -44,9 +61,10 @@ class Following1 extends Component {
                            //rightElement={rightElement}
                            rightPosition={0}
                            rightOffset="10px"
+                           
                            //   rightGap="1px"
                         >
-                                 <button className="f13"  type="button" >Following </button>
+                                 <button className="f13"  type="button" onClick={this.chng} >{this.state.f} </button>
                            </BorderWrapper>
                            </div>
                 </div>

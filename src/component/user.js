@@ -6,11 +6,13 @@ import Icon from './insta-icon.jpeg';
 import D from './download.jpg'
 import N1 from './nature.jpg'
 import N2 from './nature2.jpg'
-class RutujaProfile extends Component{
 
+class RutujaProfile extends Component{
+   
   render(){
+ 
   return (
-    <div >
+    <div className='bq'style={{borderRadius:25,border:'1px solid grey',marginTop:-20}} >
         <div className="ctQZ">   
             <div className="_47KiJ">
                 <img src={Icon} style={{marginRight : 100, blockSize:100}}></img>
@@ -25,7 +27,7 @@ class RutujaProfile extends Component{
                 <img src={D} height="105" width="105" style={{borderRadius : 70, marginTop :0, marginRight : 20}}></img>
                 <p style={{marginLeft :40, marginTop : 30, fontSize : 25}}>2</p>
                 <p style={{marginTop : 80, marginLeft:-30}}>Posts</p>
-                <p style={{marginTop : 30,  marginLeft:35,fontSize : 25}}>548</p>
+                <p style={{marginTop : 30,  marginLeft:35,fontSize : 25}}>540</p>
                 <p style={{marginTop : 80, marginLeft:-50}}>Followers</p>
                 <p style={{marginTop : 30, marginLeft:20, fontSize : 25}}>600</p>
                 <p style={{marginTop : 80, marginLeft:-40}}>Following</p>

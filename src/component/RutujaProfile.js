@@ -9,7 +9,7 @@ class RutujaProfile extends Component{
 
   render(){
   return (
-    <div>
+    <div style={{borderRadius:25,border:'1px solid grey',marginTop:-20}}>
         <div className="ctQZ">   
             <div className="_47KiJ">
                 <img src={Icon} style={{marginRight : 100, blockSize:100}}></img>
@@ -49,15 +49,15 @@ class RutujaProfile extends Component{
 
             <div className="ctQZ">   
             <div className="_47KiJ">
-                <button style={{marginTop : -19, marginRight:50,fontWeight : 200, blockSize : 30}}> Following</button>
-                <button style={{marginTop : -19,marginRight:70, fontWeight : 200, blockSize : 30}}> Message</button>
+            <button style={{marginTop : -29, marginRight:50,fontWeight : 200, blockSize : 30}}> Following</button>
+                <button style={{marginTop : -29,marginRight:70, fontWeight : 200, blockSize : 30}}> Message</button>
                 </div>
             </div>
 
             <div className="ctQZ">   
             <div className="_47KiJ">
-                <img src={Rutu1} style={{marginTop :10, marginRight:20,fontWeight : 100, blockSize : 100}}></img>
-                <img src={Rutu2} style={{marginTop : 10, marginRight:50,fontWeight : 100, blockSize : 100}}></img>
+                <img src={Rutu1} style={{marginTop :0, marginRight:20,fontWeight : 100, blockSize : 100}}></img>
+                <img src={Rutu2} style={{marginTop : 0, marginRight:50,fontWeight : 100, blockSize : 100}}></img>
                 
                 
                 </div>

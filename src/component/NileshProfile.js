@@ -7,8 +7,8 @@ import Icon from './insta-icon.jpeg';
 class NileshProfile extends Component{
   render(){
   return (
-    <div>
-        <div className="ctQZ">   
+    <div style={{borderRadius:25,border:'1px solid grey',marginTop:-20}}>
+        <div className="ctQZ" >   
             <div className="_47KiJ">
                 <img src={Icon} style={{marginRight:100, blockSize:100} }></img>
                 <p></p>
@@ -52,8 +52,8 @@ class NileshProfile extends Component{
 
             <div className="ctQZ">   
             <div className="_47KiJ">
-                <img src={Nilu1} style={{marginTop :10, marginRight:20,fontWeight : 100, blockSize : 100}}></img>
-                <img src={Nilu2} style={{marginTop : 10, marginRight:50,fontWeight : 100, blockSize : 100}}></img>
+                <img src={Nilu1} style={{marginTop :0, marginRight:20,fontWeight : 100, blockSize : 100}}></img>
+                <img src={Nilu2} style={{marginTop :0, marginRight:50,fontWeight : 100, blockSize : 100}}></img>
                 
                 
                 </div>

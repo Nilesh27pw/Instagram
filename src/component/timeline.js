@@ -8,6 +8,7 @@ import R1 from '../component/rutu1.jpeg'
 import R2 from '../component/rutu2.jpeg'
 import N1 from '../component/nilu1.jpeg'
 import N2 from '../component/nilu2.jpeg'
+import BorderWrapper from 'react-border-wrapper'
 
 
 
@@ -34,6 +35,14 @@ class timeline extends Component {
             hasTrue6:'false',
             hasTrue7:'false',
             hasTrue8:'false',
+            a:'',
+            a2:'',
+            a3:'',
+            a4:'',
+            a5:'',
+            a6:'',
+            a7:'',
+            a8:''
         };
         
     }
@@ -43,6 +52,7 @@ class timeline extends Component {
            hasTrue1:'true',
            LikeIncremet:this.state.LikeIncremet +1
              });
+          
     }
     changeColor2=()=>{
         this.setState({
@@ -86,9 +96,51 @@ hasTrue8:'true',
 LikeIncremet8:this.state.LikeIncremet8 +1
 });
 }
+
+comment=()=>{
+this.setState({
+a:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+})
+}
  
+comment2=()=>{
+  this.setState({
+  a2:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+  })
+  }
+  comment3=()=>{
+    this.setState({
+    a3:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+    })
+    }
+    comment4=()=>{
+      this.setState({
+      a4:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+      })
+      }
+      comment5=()=>{
+        this.setState({
+        a5:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+        })
+        }
+        comment6=()=>{
+          this.setState({
+          a6:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+          })
+          }
+          comment7=()=>{
+            this.setState({
+            a7:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+            })
+            }
+            comment8=()=>{
+              this.setState({
+              a8:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+              })
+              }
     render() {
         var n1='',n2='',r1='',r2='',ps1='',ps2='',prs1='',prs2=''
+    
               
         if(this.state.hasTrue1==='true'){
          n1=<div><svg aria-label="Unlike" class="_8-yf6" fill="#ed4956" height="24" viewBox="0 0 48 48" width="24">
@@ -216,79 +268,162 @@ LikeIncremet8:this.state.LikeIncremet8 +1
           <div>
             <div className="App">
                 
-                <div id="Nilu" className='bq' style={{border:'1px solid grey', marginRight:690}}>nilu_2710 
-                
-                  <div><img src={N1} alt="nilesh pic" length="500" width="500" height="500"/></div>
+                <div id="Nilu" className='bq' style={{border:'1px solid grey', marginRight:690,height:580, borderRadius: 25}}>
+                  <div className="title">nilu_2710 </div>
+                 <div><img src={N1} alt="nilesh pic" length="500" width="500" height="500"/></div>
                    <span class="FY9nT fr66n">
-                    <button class="wpO6b" type="button" onClick={this.changeColor}>
-                        {n1}<div>{this.state.LikeIncremet}Likes</div>
-                    </button>
+                      <div class="wpO6b ctQZg" style={{marginTop:-10,marginLeft:20}}  onClick={this.changeColor}>
+                        {n1}
+                    </div><div className="ctQZg" style={{marginLeft:50,marginTop:-10}}>{this.state.LikeIncremet}Likes</div>
+                    <div>
+                    <div class="wpO6b ctQZg " style={{marginTop:-12,marginLeft:130}} onClick={this.comment} >
+                      <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                      <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd">
+                      </path>
+                      </svg>
+                      <div>{this.state.a}</div>
+                    </div>
+                    </div>
+                    
                 </span>
               </div><br/>
 
                
 
-                 <div className='bq' style={{border:'1px solid grey', marginRight:690}}> rutuja_2803
+                 <div className='bq' style={{border:'1px solid grey', marginRight:690,height:580,borderRadius:25}}>
+                   <div  className="title">rutuja_2803</div>
                  <div><img src={R1} alt="rutu pic" length="500" width="500" height="500"/></div>
                    <span class="FY9nT fr66n">
-                    <button class="wpO6b" type="button" onClick={this.changeColor3}>
-                      {r1}<div>{this.state.LikeIncremet3}Likes</div>
-                    </button>
+                   <div class="wpO6b ctQZg"  style={{marginTop:-10,marginLeft:20}}  onClick={this.changeColor3}>
+                      {r1}
+                    </div>
+                    <div className="ctQZg" style={{marginLeft:50,marginTop:-10}}>{this.state.LikeIncremet3}Likes</div>
+                    <div>
+                    <div class="wpO6b ctQZg " style={{marginTop:-12,marginLeft:130}} onClick={this.comment2} >
+                      <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                      <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd">
+                      </path>
+                      </svg>
+                      <div>{this.state.a2}</div>
+                    </div>
+                    </div>
                    </span>
                  </div><br/>
 
-                 <div className='bq' style={{border:'1px solid grey', marginRight:690}}>pratii_s05
+                 <div className='bq' style={{border:'1px solid grey', marginRight:690,height:580,borderRadius:25}}>
+                 <div  className="title">pratii_s05</div>
                  <div><img src={PS1} alt="PRATI pic" length="500" width="500" height="500"/></div>
                    <span class="FY9nT fr66n">
-                    <button class="wpO6b" type="button" onClick={this.changeColor5}>
-                      {ps1}<div>{this.state.LikeIncremet5}Likes</div>
-                    </button>
-                   </span>
+                    <div class="wpO6b ctQZg" style={{marginTop:-10,marginLeft:20}}  onClick={this.changeColor5}>
+                      {ps1}
+                    </div>
+                    <div className="ctQZg" style={{marginLeft:50,marginTop:-10}} >{this.state.LikeIncremet5}Likes</div>
+                    <div>
+                    <div class="wpO6b ctQZg " style={{marginTop:-12,marginLeft:130}} onClick={this.comment3} >
+                      <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                      <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd">
+                      </path>
+                      </svg>
+                      <div>{this.state.a3}</div>
+                    </div>
+                    </div>
+                    </span>
                  </div><br/>
 
 
-                 <div className='bq' style={{border:'1px solid grey', marginRight:690}}>rutuja_2803
+                 <div className='bq' style={{border:'1px solid grey', marginRight:690,height:580,borderRadius:25}}>
+                 <div  className="title">rutuja_2803</div>
                  <div><img src={R2} alt="rutu pic" length="500" width="500" height="500"/></div>
                    <span class="FY9nT fr66n">
-                    <button class="wpO6b" type="button" onClick={this.changeColor4}>
-                      {r2}<div>{this.state.LikeIncremet4}Likes</div>
-                    </button>
-                   </span>
+                    <div class="wpO6b ctQZg" style={{marginTop:-10,marginLeft:20}}   onClick={this.changeColor4}>
+                      {r2}
+                    </div><div className="ctQZg" style={{marginLeft:50,marginTop:-10}}>{this.state.LikeIncremet4}Likes</div>
+                    <div>
+                    <div class="wpO6b ctQZg " style={{marginTop:-12,marginLeft:130}} onClick={this.comment4} >
+                      <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                      <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd">
+                      </path>
+                      </svg>
+                      <div>{this.state.a4}</div>
+                    </div>
+                    </div>
+                     </span>
                  </div><br/>
 
-                 <div className='bq' style={{border:'1px solid grey', marginRight:690}}>pratik08_
+                 <div className='bq' style={{border:'1px solid grey', marginRight:690,height:580,borderRadius:25}}>
+                 <div  className="title">pratik08_</div>
                  <div><img src={P1} alt="PRATI pic" length="500" width="500" height="500"/></div>
                    <span class="FY9nT fr66n">
-                    <button class="wpO6b" type="button" onClick={this.changeColor7}>
-                      {prs1}<div>{this.state.LikeIncremet7}Likes</div>
-                    </button>
+                    <div class="wpO6b ctQZg"   style={{marginTop:-10,marginLeft:20}} onClick={this.changeColor7}>
+                      {prs1}
+                    </div><div className="ctQZg" style={{marginLeft:50,marginTop:-10}}>{this.state.LikeIncremet7}Likes</div>
+                    <div>
+                    <div class="wpO6b ctQZg " style={{marginTop:-12,marginLeft:130}} onClick={this.comment5} >
+                      <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                      <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd">
+                      </path>
+                      </svg>
+                      <div>{this.state.a5}</div>
+                    </div>
+                    </div>
                    </span>
                  </div><br/>
 
-                 <div className='bq' style={{border:'1px solid grey', marginRight:690}}>pratii_s05
+                 <div className='bq' style={{border:'1px solid grey', marginRight:690,height:580,borderRadius:25}}>
+                 <div  className="title">pratii_s05</div>
                  <div><img src={PS2} alt="PRATI pic" length="500" width="500" height="500"/></div>
                    <span class="FY9nT fr66n">
-                    <button class="wpO6b" type="button" onClick={this.changeColor6}>
-                      {ps2}<div>{this.state.LikeIncremet6}Likes</div>
-                    </button>
+                    <div class="wpO6b ctQZg" style={{marginTop:-10,marginLeft:20}}  onClick={this.changeColor6}>
+                      {ps2}
+                    </div><div className="ctQZg" style={{marginLeft:50,marginTop:-10}}>{this.state.LikeIncremet6}Likes</div>
+                    <div>
+                    <div class="wpO6b ctQZg " style={{marginTop:-12,marginLeft:130}} onClick={this.comment6} >
+                      <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                      <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd">
+                      </path>
+                      </svg>
+                      <div>{this.state.a6}</div>
+                    </div>
+                    </div>
                    </span>
                  </div><br/>
 
                 
-                 <div className='bq' style={{border:'1px solid grey', marginRight:690}}>pratik08_
+                 <div className='bq' style={{border:'1px solid grey', marginRight:690,height:580,borderRadius:25}}>
+                 <div  className="title">pratik08_</div>
                  <div><img src={P2} alt="PRATI pic" length="500" width="500" height="500"/></div>
                    <span class="FY9nT fr66n">
-                    <button class="wpO6b" type="button" onClick={this.changeColor8}>
-                      {prs2}<div>{this.state.LikeIncremet8}Likes</div>
-                    </button>
+                    <div class="wpO6b ctQZg"  style={{marginTop:-10,marginLeft:20}} onClick={this.changeColor8}>
+                      {prs2}
+                    </div><div className="ctQZg" style={{marginLeft:50,marginTop:-10}}>{this.state.LikeIncremet8}Likes</div>
+                    <div>
+                    <div class="wpO6b ctQZg " style={{marginTop:-12,marginLeft:130}} onClick={this.comment7} >
+                      <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                      <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd">
+                      </path>
+                      </svg>
+                      <div>{this.state.a7}</div>
+                    </div>
+                    </div>
                    </span>
                  </div><br/>
-                 <div className='bq' style={{border:'1px solid grey', marginRight:690}}> nilu_2710
+                 <div className='bq' style={{border:'1px solid grey', marginRight:690,height:580,borderRadius:25}}> 
+                                <div  className="title">nilu_2710  </div>
+
                  <div><img src={N2} alt="nilesh pic" length="500" width="500" height="500"/></div>
                    <span class="FY9nT fr66n">
-                    <button class="wpO6b" type="button" onClick={this.changeColor2}>
-                      {n2}<div>{this.state.LikeIncremet2}Likes</div>
-                    </button>
+                    <div class="wpO6b ctQZg"  style={{marginTop:-10,marginLeft:20}}  onClick={this.changeColor2}>
+                      {n2}
+                    </div><div className="ctQZg" style={{marginLeft:50,marginTop:-10}}>{this.state.LikeIncremet2}Likes</div>
+                    <div>
+                    <div class="wpO6b ctQZg " style={{marginTop:-12,marginLeft:130}} onClick={this.comment8} >
+                      <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
+                      <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd">
+                      </path>
+                      </svg>
+                      <div>{this.state.a8}</div>
+                    </div>
+                    </div>
                    </span>
                  </div><br/>
             </div>

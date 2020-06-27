@@ -8,7 +8,7 @@ import Following3 from './components/Following3';
 class Activity extends Component {
     render() {
         return (
-            <div style={{marginTop:140}} >
+            <div style={{marginTop:140,borderRadius:25,border:'1px solid grey'}}>
                 <Follow />
                 <Following />
                 <Following1 />
