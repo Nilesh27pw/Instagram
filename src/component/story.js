@@ -68,21 +68,21 @@ class App extends Component {
     let j=''
     let k=''
     if (this.state.Hastrue === 'true'){
-      h = <div className="edit ctQZg" style={{marginLeft:180,marginTop:10}}>
+      h = <div className="edit ctQZg" style={{marginLeft:680,marginTop:60}}>
               <img src={process.env.PUBLIC_URL + "/img5.jpg"} 
                 style={{borderRadius:25,border:'1px solid grey',marginTop:-50}} width = "500px" height = "500px">
                   </img> 
         </div>
     }
     if (this.state.Hastrue1 === 'true'){
-       i = <div className="edit ctQZg "style={{marginLeft:180,marginTop:10}}>
+       i = <div className="edit ctQZg "style={{marginLeft:680,marginTop:60}}>
         <img src={process.env.PUBLIC_URL + "/img6.jpeg"} style={{borderRadius:25,border:'1px solid grey',marginTop:-50}} width = "500px" height = "500px"/> </div>
     }
     if (this.state.Hastrue2 === 'true'){
-     j = <div className="edit ctQZg" style={{marginLeft:180,marginTop:10}}><img src={process.env.PUBLIC_URL + "/img7.jpeg"} style={{borderRadius:25,border:'1px solid grey',marginTop:-50}} width = "500px" height = "500px"/> </div>
+     j = <div className="edit ctQZg" style={{marginLeft:680,marginTop:60}}><img src={process.env.PUBLIC_URL + "/img7.jpeg"} style={{borderRadius:25,border:'1px solid grey',marginTop:-50}} width = "500px" height = "500px"/> </div>
     }
     if (this.state.Hastrue3 === 'true'){
-       k = <div className="edit ctQZg" style={{marginLeft:180,marginTop:10}}><img src={process.env.PUBLIC_URL + "/img8.jpeg"} style={{borderRadius:25,border:'1px solid grey',marginTop:-50}} width = "500px" height = "500px"/> </div>
+       k = <div className="edit ctQZg" style={{marginLeft:680,marginTop:60}}><img src={process.env.PUBLIC_URL + "/img8.jpeg"} style={{borderRadius:25,border:'1px solid grey',marginTop:-50}} width = "500px" height = "500px"/> </div>
     }
     return (
  <div>

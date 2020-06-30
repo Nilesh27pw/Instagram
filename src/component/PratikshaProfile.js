@@ -6,6 +6,28 @@ import Pratiksha2 from './pratiksha2.jpeg';
 import Icon from './insta-icon.jpeg';
 class PratikshaProfile extends Component{
 
+    constructor(props) {
+        super(props);
+        this.state={
+            follow:'Follow',
+            Followers:557
+        }
+          
+    }
+    change = () => {
+     if(this.state.follow === 'Following'){
+         this.setState({
+             follow:'Follow',
+             Followers:this.state.Followers-1
+         });
+     }else{ 
+         this.setState({
+        follow:'Following',
+        Followers:this.state.Followers+1
+    });
+
+     }
+    }
   render(){
   return (
     <div style={{borderRadius:25,border:'1px solid grey',marginTop:-20}}>
@@ -23,7 +45,7 @@ class PratikshaProfile extends Component{
                 <img src={DpPratiksha} height="140" width="140" style={{borderRadius : 70, marginTop :0, marginRight : 20}}></img>
                 <p style={{marginLeft :40, marginTop : 30, fontSize : 25}}>2</p>
                 <p style={{marginTop : 80, marginLeft:-30}}>Posts</p>
-                <p style={{marginTop : 30,  marginLeft:35,fontSize : 25}}>557</p>
+                <p style={{marginTop : 30,  marginLeft:35,fontSize : 25}}>{this.state.Followers}</p>
                 <p style={{marginTop : 80, marginLeft:-50}}>Followers</p>
                 <p style={{marginTop : 30, marginLeft:20, fontSize : 25}}>668</p>
                 <p style={{marginTop : 80, marginLeft:-40}}>Following</p>
@@ -47,8 +69,8 @@ class PratikshaProfile extends Component{
 
             <div className="ctQZ">   
             <div className="_47KiJ">
-                <button style={{marginTop : -29, marginRight:50,fontWeight : 200, blockSize : 30}}> Following</button>
-                <button style={{marginTop : -29,marginRight:70, fontWeight : 200, blockSize : 30}}> Message</button>
+                <button style={{marginTop : -29, marginRight:50,fontWeight : 200, blockSize : 30,background:'skyblue'}} onClick={this.change}> {this.state.follow}</button>
+                <button style={{marginTop : -29,marginRight:70, fontWeight : 200, blockSize : 30,background:'skyblue'}}> Message</button>
                 </div>
             </div>
 

@@ -99,43 +99,45 @@ LikeIncremet8:this.state.LikeIncremet8 +1
 
 comment=()=>{
 this.setState({
-a:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+
+   
+   a:<div style={{marginLeft:30,marginTop:-20}}>Comment:<input style={{borderRadius:5,height:20,width:200,borderColor:'whitesmoke',fontFamily:'verdana'}} type='text'/></div>
 })
 }
  
 comment2=()=>{
   this.setState({
-  a2:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+  a2:<div style={{marginLeft:30,marginTop:-20}}>Comment:<input style={{borderRadius:5,height:20,width:200,borderColor:'whitesmoke',fontFamily:'verdana'}} type='text'/></div>
   })
   }
   comment3=()=>{
     this.setState({
-    a3:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+    a3:<div style={{marginLeft:30,marginTop:-20}}>Comment:<input style={{borderRadius:5,height:20,width:200,borderColor:'whitesmoke',fontFamily:'verdana'}} type='text'/></div>
     })
     }
     comment4=()=>{
       this.setState({
-      a4:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+      a4:<div style={{marginLeft:30,marginTop:-20}}>Comment:<input style={{borderRadius:5,height:20,width:200,borderColor:'whitesmoke',fontFamily:'verdana'}} type='text'/></div>
       })
       }
       comment5=()=>{
         this.setState({
-        a5:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+        a5:<div style={{marginLeft:30,marginTop:-20}}>Comment:<input style={{borderRadius:5,height:20,width:200,borderColor:'whitesmoke',fontFamily:'verdana'}} type='text'/></div>
         })
         }
         comment6=()=>{
           this.setState({
-          a6:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+          a6:<div style={{marginLeft:30,marginTop:-20}}>Comment:<input style={{borderRadius:5,height:20,width:200,borderColor:'whitesmoke',fontFamily:'verdana'}} type='text'/></div>
           })
           }
           comment7=()=>{
             this.setState({
-            a7:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+            a7:<div style={{marginLeft:30,marginTop:-20}}>Comment:<input style={{borderRadius:5,height:20,width:200,borderColor:'whitesmoke',fontFamily:'verdana'}} type='text'/></div>
             })
             }
             comment8=()=>{
               this.setState({
-              a8:<div style={{marginLeft:-290}}>Comment:<input style={{borderRadius:5,height:20,width:207,borderColor:'whitesmoke'}} type='text'/></div>
+              a8:<div style={{marginLeft:30,marginTop:-20}}>Comment:<input style={{borderRadius:5,height:20,width:200,borderColor:'whitesmoke',fontFamily:'verdana'}} type='text'/></div>
               })
               }
     render() {
